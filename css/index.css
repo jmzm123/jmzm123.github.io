@@ -1,0 +1,357 @@
+.topbar-warpper{
+    background-color:#333 ;
+    
+    width: 100%;
+    font-size: 12px;
+}
+.service{
+    float: left;
+}
+.user-info,.shop-car{
+    float:right; 
+}
+.nav > li{
+    float: left;
+}
+.topbar li{
+    float: left;
+}
+.service a,.user-info a,.shop-car a{
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+.topbar-warpper a:hover{
+    color: #fff;
+}
+.line{
+    color:#707070;
+    margin:10px 10px 0;
+}
+.shop-car a{
+    margin-left: 20px;
+    width: 120px;
+    text-align: center;
+    background-color: rgb(66, 66, 66);
+}
+.shop-car i{
+    margin-right: 5px;
+}
+.shop-car:hover a{
+    background-color: white;
+    color: tomato;
+}
+.d{
+    position: relative;
+}
+.qrcode{
+    position: absolute;
+    left:-40px;
+    width: 140px;
+    height: 0px;
+    box-shadow: 0 0 10px rgba(0, 0,0, .3);
+    line-height: 1;
+    text-align: center;
+    font-size: 14px;
+    color: slategrey;
+    overflow: hidden;
+    transition: 1s;
+
+}
+.qrcode img{
+    margin: 20px;
+    width: 100px;
+    
+}
+.service .d:hover .qrcode{
+    height: 180px;
+}
+.d::before{
+    content: '';
+    border: 10px transparent solid;
+    width: 0;
+    height: 0;
+    border-top:none;
+    border-bottom:10px white solid;
+    position: absolute;
+    top:30px;
+    left: 15px;
+   display: none;
+    
+}
+.d:hover::before{
+    display: block;
+}
+.header{
+    height: 100px;
+}
+.header .logo{
+    float: left;
+}
+.header .logo a{
+    display: block;
+    width: 55px;
+    height: 55px;
+   margin: 22.5px 0;
+}
+.header .logo a img{
+    width: 55px;
+   
+}
+.header-warpper{
+    width: 100%;
+    position: relative;
+    
+}
+.header{
+    width: 850px;
+    height: 100px;
+    
+}
+.header .nav{
+    line-height: 100px;
+    padding-left:100px;
+}
+
+.header .nav li a{
+    display: block;
+    font-size: 16px;
+    margin-left: 20px;
+    color: #000;
+}
+.all{
+    visibility: hidden;
+    position: relative;
+}
+/* 左菜单 */
+.left-menu{
+    visibility:visible;
+    position: absolute;
+    left: -100px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .2);
+    width: 234px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 222;
+}
+.header .nav .left-menu li a{
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    margin: 0;
+    padding-left:30px ;
+    font-size: 14px;
+    color: #fff ;
+}
+.header .nav .left-menu li a i{
+    float: right;
+    line-height: 42px;
+    padding-right: 30px;
+}
+.header .nav .left-menu li a:hover{
+    background-color: #ff6700;
+    color: #fff ;
+}
+.header .nav li a:hover{
+    color: tomato;
+}
+.goods-info{
+    width: 100%;
+    height: 0px;
+   
+    position:absolute;
+    top: 140px;
+    left: 0;
+    transition: .5s;
+}
+.nav li:not(:first-of-type):hover ~ .goods-info,.goods-info:hover{
+    height: 230px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2);
+}
+.search-warpper{
+    width:300px;
+    height: 50px;
+    float: right;
+    background-color: red;
+    margin-top:25px;
+}
+.search-warpper .search-inp{
+    box-sizing: border-box;
+    width: 250px;
+    height: 50px;
+    /* border: none; */
+    padding: 0 10px;
+    border: 1px solid #000;
+    outline: none;
+}
+.search-warpper .search-btn{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-left: none;
+    font-size: 16px;
+}
+.search-warpper .search-inp:focus,.search-warpper .search-inp:focus+button{
+    border-color:#ff6700 ;
+}
+.img-list{
+    position: relative;
+}
+.banner{
+    position: relative;
+    width: 460px;
+  
+}
+.banner img{
+    width: 100%;
+    
+}
+.banner .pointer{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    margin-right: 20px;
+}
+.pointer a{
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(103,121,134);
+    border: 2px solid #96A3AD;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    
+}
+.pointer a:hover,
+.pointer .active{
+    background-color: white;
+    border: 2px solid #202020;
+}
+.prev-next a{
+    width: 41px;
+    height: 69px;
+    background-image: url(../img/icon-slides.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    
+}
+.prev-next .prev{
+    left:234px;
+    background-position:-84px 0;
+}
+.prev-next .prev:hover{
+    
+    background-position:0 0;
+}
+.prev-next .next{
+    right: 0px;
+    background-position:-125px 0;
+}
+.prev-next .next:hover{
+    
+    background-position:-42px 0;
+}
+.a-wrap{
+    height: 170px;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.sixth-wrap{
+    height: 100%;
+    width: 234px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(211, 211, 211);
+    background-color: rgb(95,87,80);
+}
+.sixth-wrap .in-wrap{
+    border: #000 solid 1px;
+    width: 32%;
+    height: 49%;
+}
+.a{
+    height: 100%;
+}
+.a-wrap .a img{
+    height: 100%;
+    
+}
+.sixth-wrap .in-wrap img{
+    width: 24px;
+    height: 24px;
+    margin: 20px auto;
+    margin-bottom: 0;
+    display: block;
+}
+.sixth-wrap span{
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    font-size: 13px;
+}
+.sbanner img{
+    width: 100%;
+}
+.out-wrap{
+    background-color:rgb(245,245,245);
+    height: 600px;
+    padding-top: 20px;
+    justify-content: space-between;
+}
+.in-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.vertical-wrap{
+    width: 234px;
+    height: 614px;
+    background-color:seagreen;
+    margin: 0;
+    padding: 0;
+}
+.vertical-wrap img{
+    width: 100%;
+}
+.cross-wrap{
+    width: 980px;
+    height: 614px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cross-wrap .box{
+    width: 234px;
+    height: 295px;
+    background-color: #fff;
+    text-align: center;
+    
+}
+.cross-wrap img{
+    width: 160px;
+    margin: 30px auto;
+    margin-bottom: 0;
+    display: block;
+}
+.model{
+    color:#333;
+    font-size: 14px;
+    display: block;
+    margin: 5px auto;
+}
+.discribe{
+    font-size: 13px;
+    color: #b0b0b0;
+}
+.price{
+    color: #ff6700;
+    font-size: 14px;
+}
